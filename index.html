@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSM Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</head>
+<body class="bg-primary-dark" data-bs-theme="dark">
+    <main>
+        <!-- Navigation Bar (start)-->
+        <nav class="navbar navbar-expand-lg  navbar-light"  style="background-color:#0d102a;">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold" href="#"><i class="bi bi-music-note-beamed" style="font-size: 2rem"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Music</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Podcast</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                  
+                </form>
+                <h5 class="ms-2"><i class="bi bi-bell-fill"></i></h5>
+                
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle btn-link d-inline" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><h2 class="ms-sm-1 ms-md-3 d-inline"><img class="rounded-circle" style="height: 40px; width: 40px;" src="goku2.jpg" alt=""></h2></button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Account</a></li>
+                      <li><a class="dropdown-item" href="#">Setting</a></li>
+                      <li><a class="dropdown-item" href="#">Downloads</a></li>
+                      <li><a class="dropdown-item" href="#">Favourites</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar (end) -->
+
+          <!-- main containt (start)-->
+          <div id="main-containt" class="container-fluid">
+            <!-- carousel(Start) -->
+            <div id="carouselExampleInterval" class="row outer slide mt-1 outer-img" data-bs-ride="carousel">
+                <div class="carousel">
+                    <img src="marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" class="d-block w-100" alt="...">
+                  
+                    <img src="wes-hicks-MEL-jJnm7RQ-unsplash.jpg" class="d-block w-100" alt="...">
+                  
+                    <img src="marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+          </div>
+          <!-- carousel(End) -->
+
+          <!-- aside(start) -->
+          <aside id="queue">
+            <div class="top">
+              <h2>Queue</h2>
+              <button class="btn dropdown-toggle btn-link d-inline" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Queue</button>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Queue</a></li>
+                <li><a class="dropdown-item" href="#">Favourites</a></li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul type="none">
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="ed.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Shape of you</strong>
+                        <p>Ed sheeran</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="annemarrie.jpg" alt="">
+                      <div class="song-description">
+                        <strong>2002</strong>
+                        <p>Anne marie</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="bruno.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Leave the door open</strong>
+                        <p>Bruno mars</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="jb.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Baby</strong>
+                        <p>Justin bieber</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="sg.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Who says</strong>
+                        <p>Selena gomez</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="ag.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Positions</strong>
+                        <p>Ariana grande</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="text-part">
+                      <img src="BE.jpg" alt="">
+                      <div class="song-description">
+                        <strong>Bad Guy</strong>
+                        <p>Billie eilish</p>
+                      </div>
+                    </div>
+                      <div class="like-button">
+                        <a href=""><i class="bi bi-heart-fill"></i></a>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- aside(end) -->
+        </div>
+    </main>
+
+
+        <!-- Latest Release Sections(start) -->
+        <section id="latest-release">
+          <div class="section-heading">
+            Latest release
+          </div>
+          <div id="lr-container">
+            <div class="lr-item">
+              <div class="album-img">
+                <img src="id.jpg" alt="" class="image">
+                <div class="middle">
+                  <h3><i class="bi bi-play-fill play"></i></h3>
+                </div>
+              </div>
+              <span class="album-description">
+                Believer
+                <div class="date">10dec,2020</div>
+              </span>
+              <div class="lr-option">
+                <i class="bi bi-three-dots btn btn-link d-inline" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill mx-2"></i>Play Now</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus mx-2"></i>Add to Favourites</a></li>
+                </ul>
+                <div style="font-size: 12px; margin-top: -5px; margin-right: 10px;">4:40</div>
+              </div>
+            </div>
+            <div class="lr-item">
+              <div class="album-img">
+                <img src="id.jpg" alt="" class="image">
+                <div class="middle">
+                  <h3><i class="bi bi-play-fill play"></i></h3>
+                </div>
+              </div>
+              <span class="album-description">
+                Believer
+                <div class="date">10dec,2020</div>
+              </span>
+              <div class="lr-option">
+                <i class="bi bi-three-dots btn btn-link d-inline" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill mx-2"></i>Play Now</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus mx-2"></i>Add to Favourites</a></li>
+                </ul>
+                <div style="font-size: 12px; margin-top: -5px; margin-right: 10px;">4:40</div>
+              </div>
+            </div>
+            <div class="lr-item">
+              <div class="album-img">
+                <img src="id.jpg" alt="" class="image">
+                <div class="middle">
+                  <h3><i class="bi bi-play-fill play"></i></h3>
+                </div>
+              </div>
+              <span class="album-description">
+                Believer
+                <div class="date">10dec,2020</div>
+              </span>
+              <div class="lr-option">
+                <i class="bi bi-three-dots btn btn-link d-inline" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill mx-2"></i>Play Now</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus mx-2"></i>Add to Favourites</a></li>
+                </ul>
+                <div style="font-size: 12px; margin-top: -5px; margin-right: 10px;">4:40</div>
+              </div>
+            </div>
+            <div class="lr-item">
+              <div class="album-img">
+                <img src="id.jpg" alt="" class="image">
+                <div class="middle">
+                  <h3><i class="bi bi-play-fill play"></i></h3>
+                </div>
+              </div>
+              <span class="album-description">
+                Believer
+                <div class="date">10dec,2020</div>
+              </span>
+              <div class="lr-option">
+                <i class="bi bi-three-dots btn btn-link d-inline" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill mx-2"></i>Play Now</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-plus mx-2"></i>Add to Favourites</a></li>
+                </ul>
+                <div style="font-size: 12px; margin-top: -5px; margin-right: 10px;">4:40</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- Latest Release Section(end) -->
+        
+      <!-- Popular artist Section(start) -->
+        <section id="popular-artist">
+          <div class="section-heading">
+            Popular artist
+          </div>
+          <div id="diff-artist">
+            <div>
+              <div class="artist-img"><img src="ag.jpg" alt=""></div>
+              <div class="artist-name">Ariana</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="annemarrie.jpg" alt=""></div>
+              <div class="artist-name">Anne marrie</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="BE.jpg" alt=""></div>
+              <div class="artist-name">Billie</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="bruno.jpg" alt=""></div>
+              <div class="artist-name">Bruno</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="ed.jpg" alt=""></div>
+              <div class="artist-name">Ed</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="jb.jpg" alt=""></div>
+              <div class="artist-name">Justin</div>
+            </div>
+            <div>
+              <div class="artist-img"><img src="sm.jpg" alt=""></div>
+              <div class="artist-name">Sidhu</div>
+            </div>
+          </div>
+        </section>
+      <!-- Popular artist Section(end) -->
+
+
+      <!-- Different Genre(start) -->
+        <section id="genre">
+          <div class="diff-genre">
+            <img src="pop.jpg" alt="">
+            <div class="genre-name">
+              POP Music
+            </div>
+          </div>
+          <div class="diff-genre">
+            <img src="rock.jpg" alt="">
+            <span class="genre-name">
+              ROCK Music
+            </span>
+          </div>
+          <div class="diff-genre">
+            <img src="edm.jpeg" alt="">
+            <span class="genre-name">
+              EDM Music
+            </span>
+          </div>
+        </section>
+      <!-- Different Genre(end) -->
+
+
+      <!-- New Hindi release(start) -->
+      <section id="new-hindi-release">
+        <div class="section-heading">
+          New Hindi Release
+        </div>
+        <div class="containt-box">
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sm.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Sidhu Moosewala</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New Hindi release(end) -->
+
+
+      <!-- New English release(start) -->
+      <section id="new-hindi-release">
+        <div class="section-heading">
+          New English Release
+        </div>
+        <div class="containt-box">
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+          <div class="containt">
+            <div class="c-image"><img src="sg.jpg" alt=""></div>
+            <div class="description">
+              <span class="album-name">Selena gomez</span>
+              <div class="date">DEC 11,2022</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New english release(end) -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
